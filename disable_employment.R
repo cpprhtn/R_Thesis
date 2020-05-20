@@ -26,10 +26,9 @@ str(dis_final)
 dis_final$year <- as.numeric(dis_final$year)
 dis_final$value <- as.numeric(dis_final$value)
 
-
-num=1
 dis_Population <- dis_final
 dis_employment_rate <- dis_final
+num=1
 for(j in 1:22){
   if(j%%2 == 1){
     dis_Population[num,] <- dis_final[j,]
