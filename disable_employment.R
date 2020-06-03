@@ -51,3 +51,9 @@ plot(new_employment_rate$year,new_employment_rate$value, type = "b", xlim = c(20
 fit2 <- lm(new_employment_rate$value ~ new_employment_rate$year)
 fit2
 abline(fit2, col = "red")
+fit$coefficients[[2]]
+fit2$coefficients[[2]]
+
+for (k in 1:11) {
+  new_employment_rate$value[k] * new_Population$value[k] -> ndf[k]
+}
